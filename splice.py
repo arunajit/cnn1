@@ -11,7 +11,7 @@ from keras.utils import np_utils
 
 seed = 123          
 np.random.seed(seed)
-X, y = load_data("data.txt")   
+X, y = load_data("dataset/data.txt")   
 X = get_rep_mats(X)    
 for i in X:             
     for idx, j in enumerate(i):
