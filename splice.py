@@ -39,7 +39,7 @@ for train, test in kfs.split(X, Y):
 
     mod = Sequential()
 
-    mod.add(Convolution2D(60, 3, strides=3, activation='relu', input_shape=(1, 58, 64), data_format='channels_first'))
+    mod.add(Convolution2D(60, 3, strides=3, activation='relu', input_shape=(1, 58, 64), data_format='channels_first')) #set sizes accordingly (given values for demo purposes only)
     print (mod.output_shape)
     mod.add(MaxPooling2D(pool_size=(2,2)))
     mod.add(Dropout(0.25))
