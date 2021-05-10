@@ -22,7 +22,7 @@ def load_data(fname):
     return seqs, labels
 
 if __name__ == "__main__":
-    seqs, labels = load_data("E:/3/Package/ML/cnn/data.txt")
+    seqs, labels = load_data("dataset/data.txt")
     lb = conv_labels(labels)
     st = get_rep_mats(seqs)    
     print (len(lb))
